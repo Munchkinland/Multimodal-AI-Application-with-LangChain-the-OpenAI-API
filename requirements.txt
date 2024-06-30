@@ -1,0 +1,17 @@
+SQLAlchemy==2.0.31
+langchain==0.0.292
+tiktoken==0.5.1
+docarray==0.38.0
+openai==0.28
+yt_dlp
+youtube-dl
+pydub
+python-dotenv
+unstructured==0.14.4
+faiss-cpu
+pydantic==1.10.2
+flask
+python-docx
+pdfplumber
+beautifulsoup4
+html5lib
