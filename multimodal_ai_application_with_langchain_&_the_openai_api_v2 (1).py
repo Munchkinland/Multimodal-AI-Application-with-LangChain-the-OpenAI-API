@@ -39,7 +39,7 @@ from IPython.display import display, Markdown
 
 """Paso 4: Configurar la clave de API de OpenAI (revisar por variable de entorno)"""
 
-openai.api_key = "sk-proj-NCeH7elzvrTgjL2rPQJrT3BlbkFJ8MQDCZWYC2inGXbiWaPS"
+openai.api_key = "your_api_key"
 
 """Paso 5: Descargar video de YouTube y extraer audio en mp3"""
 
