@@ -8,7 +8,7 @@ Original file is located at
 
 Paso 1: Instalar las bibliotecas necesarias desde la terminal o requirements.txt
 """
-
+#Desde terminal -> pip install -r requirements.txt
 
 
 """Paso 3: Importar los paquetes necesarios"""
