@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transcriptor de Videos de YouTube</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Demo AI Multimodal sobre YouTube</h1>
+        <form id="youtube-form">
+            <input type="text" id="youtube-url" placeholder="Introduce la URL del video de YouTube" required>
+            <button type="submit" id="submit-button">Enviar</button>
+            <div id="spinner" class="spinner" style="display:none;"></div>
+        </form>
+        <div id="response">
+            <p id="transcript-text"></p>
+            <a id="download-link" href="#" download="transcript.txt" style="display:none;">Descargar Transcripción</a>
+        </div>
+
+        <div id="chat-interface">
+            <h2>Preguntar sobre el video</h2>
+            <div id="chat-output"></div>
+            <input type="text" id="user-question" placeholder="Haz una pregunta sobre el video">
+            <button id="ask-button">Preguntar</button>
+        </div>
+    </div>
+    <script src="static/js/script.js"></script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 SQLAlchemy==2.0.31
 langchain==0.0.292
-tiktoken==0.5.1
+tiktoken
 docarray==0.38.0
 openai==0.28
 yt_dlp
@@ -15,3 +15,9 @@ python-docx
 pdfplumber
 beautifulsoup4
 html5lib
+Flask
+openai
+yt-dlp
+pydub
+python-dotenv
+faiss-cpu
