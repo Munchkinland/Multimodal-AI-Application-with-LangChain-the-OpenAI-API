@@ -1,9 +1,52 @@
+# Ignorar el archivo .env que contiene variables de entorno sensibles
+.env
+
+# Ignorar el directorio de entornos virtuales (ajusta el nombre si es diferente)
+venv/
+env/
+*.env
+
+# Ignorar archivos de configuración de IDE
+.vscode/
+.idea/
+
+# Ignorar archivos de caché
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-.env
+
+# Ignorar archivos de log
+*.log
+
+# Ignorar archivos generados
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Ignorar bases de datos locales
+*.sqlite3
+*.db
+
+# Ignorar configuraciones específicas de editor
+.DS_Store
+*.swp
+
+# Ignorar archivos de pruebas
+*.coverage
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# Ignorar archivos temporales
+*.tmp
+*.bak
+*.swp
+
+# Ignorar archivos mp3
 *.mp3
-*.mp4
-*.webm
-*.txt
+
+# Ignorar archivos generados por Jupyter
+.ipynb_checkpoints/

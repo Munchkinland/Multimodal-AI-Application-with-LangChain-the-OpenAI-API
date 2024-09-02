@@ -21,7 +21,7 @@ def download_and_transcribe_video(youtube_url):
             }
         ],
         "outtmpl": os.path.join(output_dir, "%(title)s.%(ext)s"),
-        "ffmpeg_location": "C:\\ffmpeg\\ffmpeg-2024-08-28-git-b730defd52-full_build\\bin",  # Añadido por fallo en agregación de variable de entorno en Windows
+        "ffmpeg_location": "C:\\ffmpeg\\ffmpeg-2024-08-28-git-b730defd52-full_build\\bin",
         "verbose": True
     }
 
@@ -30,11 +30,21 @@ def download_and_transcribe_video(youtube_url):
             result = ydl.extract_info(youtube_url, download=True)
             audio_file = ydl.prepare_filename(result).replace('.webm', '.mp3')
 
-        with open(audio_file, "rb") as audio:
-            response = openai.Audio.transcribe("whisper-1", audio)
+        # Transcribe the audio file
+        try:
+            with open(audio_file, "rb") as audio:
+                response = openai.Audio.transcribe("whisper-1", audio)
+                transcript = response["text"]
 
-        transcript = response["text"]
-        return transcript
+            # Save the transcript to a file
+            transcript_file_path = audio_file.replace('.mp3', '.txt')
+            with open(transcript_file_path, 'w') as transcript_file:
+                transcript_file.write(transcript)
+
+            return transcript, transcript_file_path  # Return both the transcript and the path to the transcript file
+
+        except Exception as e:
+            return f"Error during transcription: {str(e)}", None
 
     except DownloadError as e:
-        return f"Error al descargar el video: {str(e)}"
+        return f"Error downloading the video: {str(e)}", None

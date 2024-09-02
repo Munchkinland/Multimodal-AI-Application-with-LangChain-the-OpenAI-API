@@ -4,28 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transcriptor de Videos de YouTube</title>
-    <link rel="stylesheet" href="static/css/styles.css">
+    <!-- Incluye el CSS si es necesario -->
+    <link rel="stylesheet" href="/static/css/styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Demo AI Multimodal sobre YouTube</h1>
-        <form id="youtube-form">
-            <input type="text" id="youtube-url" placeholder="Introduce la URL del video de YouTube" required>
-            <button type="submit" id="submit-button">Enviar</button>
-            <div id="spinner" class="spinner" style="display:none;"></div>
-        </form>
-        <div id="response">
-            <p id="transcript-text"></p>
-            <a id="download-link" href="#" download="transcript.txt" style="display:none;">Descargar Transcripción</a>
-        </div>
+        <header>
+            <h1>Demo AI Multimodal sobre YouTube</h1>
+        </header>
+        <main>
+            <section id="upload-section">
+                <form id="youtube-form">
+                    <input type="text" id="youtube-url" placeholder="Introduce la URL del video de YouTube" required>
+                    <button type="submit" id="submit-button">Enviar</button>
+                    <div id="spinner" class="spinner" style="display:none;"></div>
+                </form>
+                <div id="response">
+                    <p id="transcript-text"></p>
+                    <a id="download-audio-link" class="button" href="#" download="transcript.txt" style="display:none;">Descargar Transcripción</a>
+                </div>
+            </section>
 
-        <div id="chat-interface">
-            <h2>Preguntar sobre el video</h2>
-            <div id="chat-output"></div>
-            <input type="text" id="user-question" placeholder="Haz una pregunta sobre el video">
-            <button id="ask-button">Preguntar</button>
-        </div>
+            <section id="chat-interface">
+                <h2>Preguntar sobre el video</h2>
+                <div id="chat-output"></div>
+                <input type="text" id="user-question" placeholder="Haz una pregunta sobre el video">
+                <button id="ask-button">Preguntar</button>
+            </section>
+        </main>
     </div>
-    <script src="static/js/script.js"></script>
+    <script src="/static/js/script.js"></script> <!-- Asegúrate de que la ruta sea correcta -->
 </body>
 </html>
+
