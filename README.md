@@ -1,5 +1,7 @@
 # Multimodal AI Application with LangChain and OpenAI API
 
+<img width="427" alt="image" src="https://github.com/user-attachments/assets/aa46b398-76a7-4d7b-b5a6-e5e674467bbf">
+
 ## Descripción
 
 Este proyecto es una aplicación de inteligencia artificial multimodal que utiliza la API de OpenAI para interactuar con transcripciones de videos de YouTube. Permite a los usuarios procesar videos de YouTube para obtener transcripciones y hacer preguntas sobre el contenido del video utilizando un chatbot. La aplicación también ofrece la funcionalidad para descargar tanto la transcripción como el audio del video.
