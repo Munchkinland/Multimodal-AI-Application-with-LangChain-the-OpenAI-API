@@ -4,7 +4,7 @@
 
 ## Descripción
 
-Este proyecto es una aplicación de inteligencia artificial multimodal que utiliza la API de OpenAI para interactuar con transcripciones de videos de YouTube. Permite a los usuarios procesar videos de YouTube para obtener transcripciones y hacer preguntas sobre el contenido del video utilizando un chatbot. La aplicación también ofrece la funcionalidad para descargar tanto la transcripción como el audio del video.
+Este proyecto es una aplicación de inteligencia artificial multimodal que utiliza la API de OpenAI para interactuar con transcripciones de videos de YouTube. Permite a los usuarios procesar videos de YouTube para obtener transcripciones y hacer preguntas sobre el contenido del video utilizando un chatbot. La aplicación también ofrece la funcionalidad para descargar tanto la transcripción y la posibilidad de implementar la descarga del audio del video. Ideal para estudiantes, investigadores y cualquier persona interesada en analizar videos de manera eficiente, esta aplicación transforma la manera en que se interactúa con contenido multimedia, haciendo el aprendizaje y la revisión mucho más accesibles y eficientes
 
 ## Características
 
